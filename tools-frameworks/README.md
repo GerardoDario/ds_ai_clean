@@ -389,9 +389,14 @@ model = PPO("MlpPolicy", env)
 
 ## 🔮 Tendencias Futuras
 
-- **Edge AI**: Modelos en dispositivos
-- **Federated Learning**: ML distribuido y privado
-- **AutoML**: Automatización creciente
-- **MLOps**: Maduración de prácticas
-- **Green AI**: IA eficiente en energía
-- **Quantum ML**: ML cuántico emergente
+- **Edge AI**: Ejecución de modelos directamente en dispositivos móviles y IoT, reduciendo latencia y mejorando privacidad. Herramientas como TensorFlow Lite y ONNX Runtime facilitan el deployment en edge.
+
+- **Federated Learning**: Entrenamiento de modelos distribuidos donde los datos permanecen en dispositivos locales, preservando privacidad. Frameworks como PySyft y TensorFlow Federated lideran esta área.
+
+- **AutoML**: Automatización del proceso de ML desde feature engineering hasta selección de arquitecturas. Plataformas como H2O AutoML y Google Cloud AutoML democratizan el acceso a ML.
+
+- **MLOps**: Maduración de prácticas DevOps para ML, incluyendo CI/CD para modelos, monitoreo en producción y gestión del ciclo de vida. Herramientas como MLflow, Kubeflow y DVC se están convirtiendo en estándares.
+
+- **Green AI**: Enfoque en eficiencia energética y reducción de huella de carbono en entrenamiento e inferencia. Incluye técnicas de compresión de modelos, quantización y arquitecturas eficientes.
+
+- **Quantum ML**: Aplicación de computación cuántica a problemas de ML, aún en etapas tempranas pero con potencial disruptivo. Frameworks como PennyLane y Qiskit Machine Learning exploran este espacio.

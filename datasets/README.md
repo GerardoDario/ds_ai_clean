@@ -380,7 +380,21 @@ ds = tfds.load('mnist', split='train')
 ## ⚠️ Advertencias
 
 1. **Sesgos**: Muchos datasets tienen sesgos inherentes
+   - *Ejemplo*: ImageNet tiene subrepresentación de culturas no occidentales
+   - *Acción*: Audita tu dataset, verifica distribuciones, considera datos de múltiples fuentes
+
 2. **Privacidad**: Algunos contienen información sensible
+   - *Ejemplo*: Datasets de rostros pueden violar privacidad si se usan sin consentimiento
+   - *Acción*: Verifica términos de uso, anonimiza datos personales, cumple GDPR/CCPA
+
 3. **Licencias**: Respeta términos de uso
+   - *Ejemplo*: Algunos datasets solo permiten uso académico, no comercial
+   - *Acción*: Lee LICENSE.txt, verifica restricciones, documenta fuentes
+
 4. **Actualización**: Datasets pueden quedar obsoletos
+   - *Ejemplo*: Datos de redes sociales de 2015 pueden no reflejar comportamiento actual
+   - *Acción*: Verifica fecha de recolección, considera drift temporal
+
 5. **Calidad**: Siempre valida calidad de anotaciones
+   - *Ejemplo*: Crowdsourced labels pueden tener errores (5-10% típico)
+   - *Acción*: Spot-check manual, métricas de inter-annotator agreement, valida outliers

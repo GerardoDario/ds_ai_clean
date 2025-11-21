@@ -125,10 +125,10 @@ Este directorio contiene recursos y trabajos relacionados con el Procesamiento d
 - "Transformers for Natural Language Processing" - Denis Rothman
 
 ### Papers Fundamentales
-- "Attention Is All You Need" (Transformer, 2017)
-- "BERT: Pre-training of Deep Bidirectional Transformers" (2018)
-- "Language Models are Few-Shot Learners" (GPT-3, 2020)
-- "Neural Machine Translation by Jointly Learning to Align and Translate" (Attention, 2014)
+- "Attention Is All You Need" - Vaswani et al., 2017 (Transformer)
+- "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" - Devlin et al., 2018
+- "Language Models are Few-Shot Learners" - Brown et al., 2020 (GPT-3)
+- "Neural Machine Translation by Jointly Learning to Align and Translate" - Bahdanau et al., 2014 (Attention mechanism)
 
 ### Blogs y Recursos
 - [Jay Alammar's Blog](https://jalammar.github.io/) - Visualizaciones excelentes

@@ -261,13 +261,28 @@ Este directorio contiene recursos y trabajos relacionados con Reinforcement Lear
 - **Explainable RL**: Interpretabilidad de políticas
 - **Sample Efficiency**: Reducir muestras necesarias
 
-## ⚠️ Desafíos Comunes
+## ⚠️ Desafíos Comunes y Soluciones
 
 1. **Sample Inefficiency**: Millones de pasos de entrenamiento
+   - *Soluciones*: Model-based RL, curriculum learning, transfer learning, usar algoritmos off-policy (SAC, TD3)
+
 2. **Inestabilidad**: Colapso del entrenamiento
+   - *Soluciones*: Target networks, gradient clipping, normalización de rewards, usar PPO en lugar de TRPO
+
 3. **Sensibilidad a hiperparámetros**: Pequeños cambios, grandes efectos
+   - *Soluciones*: Grid search, Bayesian optimization, usar implementaciones validadas (Stable-Baselines3), documentar todos los hiperparámetros
+
 4. **Reproducibilidad**: Resultados variables entre runs
+   - *Soluciones*: Fijar random seeds, múltiples runs con estadísticas, documentar versiones de bibliotecas
+
 5. **Credit Assignment**: Asignar crédito a acciones pasadas
+   - *Soluciones*: Usar métodos TD con n-step returns, GAE (Generalized Advantage Estimation), hindsight experience replay
+
 6. **Exploration vs Exploitation**: Balance difícil
+   - *Soluciones*: ε-greedy scheduling, entropy regularization, curiosity-driven exploration, count-based bonuses
+
 7. **Sparse Rewards**: Señales de aprendizaje infrecuentes
+   - *Soluciones*: Reward shaping, curriculum learning, hindsight experience replay, imitation learning
+
 8. **Transferencia**: Modelos específicos a entornos
+   - *Soluciones*: Domain randomization, sim-to-real techniques, meta-RL, progressive neural networks

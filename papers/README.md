@@ -398,16 +398,20 @@ Este directorio contiene referencias a artículos científicos importantes en In
 
 ## 🏆 Papers Más Citados (Top 10)
 
-1. **ImageNet Classification** (AlexNet) - 100K+ citas
-2. **Attention Is All You Need** - 80K+ citas
-3. **Deep Residual Learning** (ResNet) - 120K+ citas
-4. **Generative Adversarial Networks** - 50K+ citas
-5. **BERT** - 70K+ citas
-6. **Adam Optimizer** - 90K+ citas
-7. **Batch Normalization** - 60K+ citas
-8. **Dropout** - 40K+ citas
-9. **Playing Atari with Deep RL** (DQN) - 20K+ citas
-10. **VGG** - 80K+ citas
+**Nota**: Los números de citas son aproximados y cambian constantemente. Última actualización: 2024.
+
+1. **Deep Residual Learning** (ResNet) - Uno de los más citados en CV
+2. **ImageNet Classification** (AlexNet) - Revolucionó deep learning
+3. **Adam Optimizer** - Estándar en optimización
+4. **Attention Is All You Need** - Fundamento de modelos modernos
+5. **VGG** - Arquitectura fundamental en CV
+6. **BERT** - Transformó NLP
+7. **Batch Normalization** - Técnica esencial de entrenamiento
+8. **Generative Adversarial Networks** - Innovación en generación
+9. **Dropout** - Técnica clave de regularización
+10. **Playing Atari with Deep RL** (DQN) - Pionero en deep RL
+
+*Los papers más influyentes suelen tener decenas de miles de citas en Google Scholar.*
 
 ## ⭐ Papers Recomendados para Empezar
 
