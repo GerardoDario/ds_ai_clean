@@ -6,29 +6,30 @@ from my_project.tools import leer_pdf
 
 load_dotenv()
 
-class PDFSummary(BaseModel):
-    resumen: str
+class Summary(BaseModel):
+    resumen_detallado: str
 
 agent = Agent(
     model="groq:llama-3.1-8b-instant",
-    tools=[Tool(leer_pdf)],
     instructions=(
-        "Eres un asistente experto en documentos. "
-        "Puedes usar la herramienta leer_pdf cuando te lo pidan. "
-        "Siempre resume con claridad."
+        "Eres un analista experto en textos. "
+        "Genera resúmenes profundos, precisos y detallados. "
+        "Incluye personajes, conflicto, estructura, moraleja y hechos clave. "
+        "No inventes nada que no esté en el texto."
     ),
-    output_type=PDFSummary,
+    output_type=Summary,
 )
 
 def main() -> None:
-    pdf_path = "data/external/Resume (ESP) - Gerardo Sepúlveda.pdf"
+    #pdf_path = "data/external/Resume (ESP) - Gerardo Sepúlveda.pdf"
+    pdf_path = "data/external/cuentos-cortos-los-tres-cerditos.pdf"
 
     resp = agent.run_sync(
         f"Lee el PDF ubicado en '{pdf_path}' y dame un resumen breve."
     )
 
     print("\n=== RESUMEN ===")
-    print(resp.output.resumen)
+    print(resp.output.resumen_detallado)
 
 if __name__ == "__main__":
     main()
