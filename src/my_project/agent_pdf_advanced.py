@@ -6,7 +6,8 @@ import math
 
 load_dotenv()
 
-PDF_PATH = "data/external/cuentos-cortos-los-tres-cerditos.pdf"
+#PDF_PATH = "data/external/cuentos-cortos-los-tres-cerditos.pdf"
+PDF_PATH = "data/external/Resume (ESP) - Gerardo Sepúlveda.pdf"
 
 # --------------------------------------------------------
 # 1. Modelo estructurado para la salida
