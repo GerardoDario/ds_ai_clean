@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from pydantic_ai import Agent, Tool
 from pydantic import BaseModel
-from my_project.tools import sumar
+from my_project.tools import sumar, contar_palabras, es_palindromo
 
 load_dotenv()
 
@@ -20,7 +20,7 @@ agent = Agent(
     model="groq:llama-3.1-8b-instant",
 
     # Herramientas disponibles
-    tools=[Tool(sumar)],
+    tools=[Tool(sumar), Tool(contar_palabras), Tool(es_palindromo)],
 
     # Instrucciones que guían el comportamiento
     instructions=(
